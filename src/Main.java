@@ -10,5 +10,7 @@ public class Main {
 
        System.out.println(car.getName());
        System.out.println(car2.getName());
+
+       System.out.println( Calculator.multiplyMethod(2,3));
     }
 }
