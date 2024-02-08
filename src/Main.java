@@ -3,34 +3,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //new BogO();
 
-        System.out.println("Helljo ");
+        String[] charcters = {"Yoda", "R2D2", "Luke", "Leia", "Han", "Obi-Wan", "Chewie", "Aboubakar", "Finn", "Qi"};
 
-       Car car = new Car("Aston-Martin");
-       Car car2 = new Car("Alfa-Romeo");
+        StringArray swc = new StringArray(charcters);
 
-       Bike bike = new Bike();
+        System.out.println(swc);
 
-       System.out.println(car.getName());
-       System.out.println(car2.getName());
+        swc.add("Babayaga");
 
-       System.out.println( Calculator.multiplyMethod(2,3));
+        System.out.println(swc);
 
-        Random random = new Random();
-        Scanner sc = new Scanner(System.in);
+        swc.add(3, "Mace");
 
-        while (true){
-            System.out.println("Your random number is: " + random.ints(1 , 100).findFirst().getAsInt());
+        System.out.println(swc);
 
-            System.out.println("Press Enter for a new number or Write q to quit");
-            if(sc.nextLine().equals("q")){
-                System.out.println("Good bye!");
-                System.exit(0);
+        swc.reverse();
 
-            }
-        }
-
-
-
+        System.out.println(swc);
     }
+
+
 }
