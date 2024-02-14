@@ -22,6 +22,9 @@ public class Main {
         swc.reverse();
 
         System.out.println(swc);
+
+        //todays day:: Mon = 0, tues = 1, wed = 2...
+        Circular.CalculateDays(2, 15);
     }
 
 
